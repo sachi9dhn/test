@@ -1,0 +1,15 @@
+<VirtualHost *:443>
+  ServerName iriswebsite-uat.irissoftware.com
+  <If "%{HTTP_HOST} == 'www.iriswebsite-uat.irissoftware.com'">
+    Redirect permanent / https://iriswebsite-uat.irissoftware.com/
+  </If>
+
+  DirectoryIndex index.html index.php
+  DocumentRoot /var/www/html/iriswebsite-UAT.irissoftware.com/public_html
+
+  ErrorLog /var/log/httpd/iriswebsite-uat.irissoftware.com-error.log
+  CustomLog /var/log/httpd/iriswebsite-uat.irissoftware.com-access.log combined
+
+  SSLEngine On
+  SSLProtocol +TLSv1.2 +TLSv1.3
+  SSLCertificateFile /var/www/html/iriswebsite-UAT.irissoftware.com/ssl/wildcard_irissoftware_com.crt
