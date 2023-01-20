@@ -1,0 +1,8 @@
+ DirectoryIndex index.html index.php
+  DocumentRoot /var/www/html/iriswebsite-UAT.irissoftware.com/public_html
+
+  ErrorLog /var/log/httpd/iriswebsite-uat.irissoftware.com-error.log
+  CustomLog /var/log/httpd/iriswebsite-uat.irissoftware.com-access.log combined
+
+  SSLEngine On
+  SSLProtocol +TLSv1.2 +TLSv1.3
