@@ -1,0 +1,12 @@
+ start vncserver -
+/usr/bin/vncserver :1
+#password --  True2021!
+#viewonnly -- true10:04PM
+# Would you like to enter a view-only password (y/n)? ---- y
+#viewonnly -- true10:04PM
+
+# Restart VM ( stop then start)
+# start vncserver
+/usr/bin/vncserver :1
+
+/usr/bin/vncserver -kill :1
