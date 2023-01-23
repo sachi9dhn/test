@@ -1,0 +1,4 @@
+Options FollowSymLinks
+      AllowOverride All
+      #order allow,deny
+      #Deny from all
